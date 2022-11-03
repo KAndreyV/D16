@@ -1,0 +1,20 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_tags %}
+
+{% block title %}
+Response
+{% endblock title %}
+
+{% block content %}
+<h3>{% current_time '%d %b %Y' %}</h3>
+
+<hr>
+
+    {{ response.text_of_response }}
+
+
+<button> <a href="/advertisements/responses/{{ response.pk }}/confirm"> Подтвердить.</a> </button>
+<div><a href="/advertisements/responses/{{ response.pk }}/delete/">Удалить</a>.</div>
+
+{% endblock content %}
