@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+5%9y1un1gfk%@bmnap#-v9%vvlebb!yk76h746+il4fp&5xzg'
+SECRET_KEY = '****************'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -177,12 +177,12 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 
 ACCOUNT_FORMS = {'signup': 'sign.models.BasicSignupForm'}
 
-EMAIL_HOST = 'smtp.yandex.ru'  # адрес сервера Яндекс-почты для всех один и тот же
+EMAIL_HOST = '***********'  # адрес сервера Яндекс-почты для всех один и тот же
 EMAIL_PORT = 465  # порт smtp сервера тоже одинаковый
-EMAIL_HOST_USER = 'Qdim2002' # ваше имя пользователя, например, если ваша почта user@yandex.ru, то сюда надо писать user, иными словами, это всё то что идёт до собаки
-EMAIL_HOST_PASSWORD = 'myaswfbpzmplmiaa'  # пароль от почты
+EMAIL_HOST_USER = '***************' # ваше имя пользователя, например, если ваша почта user@yandex.ru, то сюда надо писать user, иными словами, это всё то что идёт до собаки
+EMAIL_HOST_PASSWORD = '***************'  # пароль от почты
 EMAIL_USE_SSL = True
-DEFAULT_FROM_EMAIL = 'Qdim2002@yandex.ru'
+DEFAULT_FROM_EMAIL = '*********************'
 
 
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
