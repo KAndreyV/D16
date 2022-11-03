@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h2>Страница авторизованного пользователя {{request.user.username}}</h2>
+
+
+<div>Посмотри о чем просят жители:) <a href="advertisements/">объявления</a>.</div>
+<div>Создай <a href="advertisements/create/">свое объявление</a>.</div>
+<div>Мои <a href="advertisements/responses/">Отклики</a>.</div>
+
+<button> <a href="sign/logout/">Выйти</a> </button>
+
+{% endblock %}
